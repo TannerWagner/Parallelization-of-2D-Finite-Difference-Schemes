@@ -1,0 +1,27 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Load the timing data from timings.txt
+timings = np.loadtxt('timings.txt')
+
+# Define thread counts for labeling
+thread_counts = [1, 2, 3]
+
+# Plot the timing data
+plt.figure(figsize=(10, 6))
+for i, thread_count in enumerate(thread_counts):
+    plt.plot(range(1, timings.shape[1] + 1), timings[i], marker='o', label=f'{thread_count} Thread{"s" if thread_count > 1 else ""}')
+
+# Adding titles and labels
+plt.title('Local Machine Timings for Different Thread Counts')
+plt.xlabel('Timing Instance')
+plt.ylabel('Timing (s)')
+plt.xticks(range(1, timings.shape[1] + 1))  # Match x-axis to timing instances
+plt.legend(title="Thread Count")
+plt.grid(True)
+
+# Save the plot
+plt.savefig('local_timings_plot.png', dpi=300)
+
+# Show the plot
+plt.show()
