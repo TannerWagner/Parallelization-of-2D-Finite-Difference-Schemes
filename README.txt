@@ -1,8 +1,5 @@
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-README file for Homework 4, Math 471, Fall 2024, J. Chaudhary
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-- This is the README for Homework 4.
-- The elements of the hw4 directory are this README and two
+- The elements of this directory are this README and two
   subdirectories: code and report.
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 - The subdirectory code contains all of the necessary code for
